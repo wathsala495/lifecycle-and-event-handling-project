@@ -1,25 +1,39 @@
 import logo from './logo.svg';
 import './App.css';
+import Person from './Components/index';
+import FunctionalComponent from './Components/FunctionalComponent'
+import Lifecycle from './Components/Lifecycle';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <Person age="45" address="tangalle"/>
+     <Lifecycle/>
+     <FunctionalComponent/>
     </div>
-  );
+  )
+  // const handleokClick=()=>{
+  //   console.log("Ok button clicked");
+  // }
+
+  // const handleCancelClick=()=>{
+  //   console.log("Cancel button clicked");
+  // }
+  // const handleInputChange=(event,name)=>{
+  //   console.log(event.target.value +name);
+  // }
+  // return (
+  //   <div >
+  //     <Clock/>
+  //     <button onClick={handleokClick}>Ok</button>
+  //     <button onClick={handleCancelClick}>Cancel</button>
+  //     <input type='text' onChange={(event)=>handleInputChange(event,"Amal")}/>
+  //   </div>
+  // );
+  
+
+   
 }
 
 export default App;
